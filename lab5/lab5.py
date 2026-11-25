@@ -110,6 +110,8 @@ class Molecule:
         return self._atoms
 
     def add_atom(self, atom):
+        if not isinstance(atom, Atom):
+            raise TypeError("Only Atom objects can be added")
         self._atoms.append(atom)
 
     def remove_atom(self, atom):
