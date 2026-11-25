@@ -77,7 +77,7 @@ class Atom:
     # --- методи ---
     def is_neutral(self):
         """Атом нейтральний, якщо кількість протонів дорівнює кількості електронів."""
-        return self._protons == self._electrons
+        return self._neutrons == self._electrons
 
     def show(self):
         print(f"Атом {self._name}: маса = {self._atomic_mass} а.о.м., "
